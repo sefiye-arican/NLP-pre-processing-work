@@ -1,4 +1,4 @@
-# NLP Pre‑Processing Work
+# (TR) NLP Pre‑Processing Work
 
 Bu çalışma, 2023 yazında gerçekleştirdiğim bir staj sürecinde yaptığım **başlangıç seviyesi bir doğal dil işleme (NLP) ön işleme projesidir**. Amaç, metin verileri üzerinde temel ön işleme adımlarını uygulayarak bu verileri analiz ve modelleme için hazır hâle getirmektir.
 
@@ -93,7 +93,7 @@ Bu adımlar sayesinde sentiment analizi, metin sınıflandırma veya konu modell
   - `stem_or_lemmatize()` ile kelime köküne ya da lemma’ya dönüştürme
 
 
-# NLP Pre‑Processing Work
+# (EN) NLP Pre‑Processing Work
 
 This project is a **beginner-level natural language processing (NLP) pre-processing study** I developed during my internship in the summer of 2023. The goal is to apply fundamental pre-processing steps on text data to prepare it for analysis and modeling.
 
@@ -165,7 +165,22 @@ These steps help prepare datasets for tasks such as sentiment analysis, text cla
 ## How to Use
 
 1. Clone this repository:
-
    ```bash
    git clone https://github.com/sefiye-arican/NLP-pre-processing-work.git
    cd NLP-pre-processing-work
+
+2. Install the required libraries:
+    ```bash
+    pip install -r requirements.txt
+    
+3. Open the sample notebooks in a Python environment:
+   ```bash
+   jupyter notebook
+   
+- You can find example workflows in `text_cleaning.ipynb` or other notebooks in the repository.
+4. Step-by-step processing:
+
+  - `clean_text()` → text cleaning  
+  - `tokenize_text()` → tokenization  
+  - `remove_stopwords()` → stop-word removal  
+  - `stem_or_lemmatize()` → stemming or lemmatization
