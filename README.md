@@ -91,3 +91,81 @@ Bu adımlar sayesinde sentiment analizi, metin sınıflandırma veya konu modell
   - `tokenize_text()` ile tokenizasyon  
   - `remove_stopwords()` ile stop‑word çıkarımı  
   - `stem_or_lemmatize()` ile kelime köküne ya da lemma’ya dönüştürme
+
+
+# NLP Pre‑Processing Work
+
+This project is a **beginner-level natural language processing (NLP) pre-processing study** I developed during my internship in the summer of 2023. The goal is to apply fundamental pre-processing steps on text data to prepare it for analysis and modeling.
+
+---
+
+## Table of Contents
+
+- [Overview](#overview)  
+- [Technologies Used](#technologies-used)  
+- [Pre-processing Steps](#pre-processing-steps)  
+  - Cleaning  
+  - Tokenization  
+  - Stop-word Removal  
+  - Stemming and Lemmatization  
+- [How to Use](#how-to-use)
+
+---
+
+## Overview
+
+This project includes common NLP pre-processing techniques to prepare text data for analysis and modeling. The main operations are:
+
+- Cleaning raw text (HTML tags, URLs, numbers, special characters, etc.)
+- Tokenizing text into meaningful components
+- Removing unnecessary words (stop-words)
+- Reducing words to their base form (stemming/lemmatization)
+
+These steps help prepare datasets for tasks such as sentiment analysis, text classification, and topic modeling.
+
+---
+
+## Technologies Used
+
+| Technology           | Purpose                            |
+|----------------------|-------------------------------------|
+| Python               | Main programming language           |
+| regex                | Pattern-based text cleaning         |
+| NLTK / SpaCy         | Tokenization, stop-word removal, lemmatization |
+| BeautifulSoup        | HTML tag removal                    |
+| Gensim, Scikit-Learn | Text vectorization (e.g. TF-IDF)    |
+
+---
+
+## Pre-processing Steps
+
+### 🧼 1. Cleaning
+
+- Convert text to lowercase
+- Remove HTML/XML tags
+- Remove patterns like URLs, emails, numbers
+- Remove punctuation and unnecessary characters
+
+### ✂️ 2. Tokenization
+
+- Split text into sentences and words (e.g., `nltk.tokenize.word_tokenize`)
+- Custom tokenization for tweets or chat-style texts if needed
+
+### 🚫 3. Stop-word Removal
+
+- Remove common words that add little meaning (e.g., “and”, “the”, “is”)
+
+### 🌱 4. Stemming and Lemmatization
+
+- **Stemming**: Reduce words to their stem forms
+- **Lemmatization**: Reduce words to their lemma based on context
+
+---
+
+## How to Use
+
+1. Clone this repository:
+
+   ```bash
+   git clone https://github.com/sefiye-arican/NLP-pre-processing-work.git
+   cd NLP-pre-processing-work
